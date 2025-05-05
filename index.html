@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BauNord AB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #0a2d42;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .contact-info {
+            background-color: #e0fbfc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            height: 300px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: slide 20s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            20% { transform: translateX(0%); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0%); }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .gallery-item p {
+            padding: 10px;
+            font-size: 0.95em;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BauNord AB</h1>
+        <p>Professionella bygglösningar i Sverige</p>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="foto1.jpg" alt="Slide 1">
+            <img src="foto2.jpg" alt="Slide 2">
+            <img src="foto3.jpg" alt="Slide 3">
+            <img src="foto4.jpg" alt="Slide 4">
+        </div>
+    </div>
+
+    <section>
+        <h2>Om Oss</h2>
+        <p>BauNord AB erbjuder högkvalitativa byggtjänster för kommersiella och bostadsfastigheter över hela Sverige. Vi arbetar med helhetslösningar inom byggnation, renovering och teknisk projektledning.</p>
+
+        <h2>Tjänster</h2>
+        <ul>
+            <li>Byggnation av kommersiella fastigheter</li>
+            <li>Renoveringar och ombyggnationer</li>
+            <li>Projektledning och teknisk konsultation</li>
+        </ul>
+
+        <h2>Galleri</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="foto1.jpg" alt="Foto 1">
+                <p>Projekt i tidigt skede</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto2.jpg" alt="Foto 2">
+                <p>Fundamentarbete pågår</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto3.jpg" alt="Foto 3">
+                <p>Armering och betong</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto4.jpg" alt="Foto 4">
+                <p>Stomme monteras</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto5.jpg" alt="Foto 5">
+                <p>Fasadarbete på hög nivå</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto6.jpg" alt="Foto 6">
+                <p>Takläggning</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto7.jpg" alt="Foto 7">
+                <p>Interiöra renoveringar</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto8.jpg" alt="Foto 8">
+                <p>El och installationer</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto9.jpg" alt="Foto 9">
+                <p>Färdigställt kontorsutrymme</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto10.jpg" alt="Foto 10">
+                <p>Slutkontroll och besiktning</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto11.jpg" alt="Foto 11">
+                <p>Utvändig målning och fasadputs</p>
+            </div>
+            <div class="gallery-item">
+                <img src="foto12.jpg" alt="Foto 12">
+                <p>Teamarbete på byggarbetsplats</p>
+            </div>
+        </div>
+
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <p><strong>E-post:</strong> kontakt@baunord.se</p>
+            <p><strong>Telefon:</strong> +46 70 123 45 67</p>
+            <p><strong>Adress:</strong> Vasagatan 12, 411 24 Göteborg, Sverige</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 BauNord AB - Alla rättigheter förbehållna
+    </footer>
+</body>
+</html>
