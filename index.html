@@ -3,72 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Zgjidhje ndërtimi dhe shitje profesionale në Kosovë & Suedi">
   <title>BauNord AB</title>
+  <meta name="description" content="Zgjidhje ndërtimi dhe shitje profesionale">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>BauNord AB</h1>
-      <p>Zgjidhje ndërtimi dhe shitje profesionale</p>
+  <!-- ✅ NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">BauNord AB</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Ballina</a></li>
+        <li><a href="#services">Shërbime</a></li>
+        <li><a href="#gallery">Projekte</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ✅ HERO SECTION -->
+  <header id="hero" class="hero">
+    <div class="hero-overlay">
+      <h1>Zgjidhje ndërtimi profesionale</h1>
+      <p>Ekspertizë, cilësi dhe besueshmëri – në Kosovë dhe Suedi</p>
       <a href="https://wa.me/38344403818" class="btn">Kontakt në WhatsApp</a>
     </div>
   </header>
 
-<!-- SLIDER -->
-<section class="slider">
-  <div class="slides">
-    <img src="images/foto1.jpg" alt="Foto 1" />
-    <img src="images/foto2.jpg" alt="Foto 2" />
-    <img src="images/foto3.jpg" alt="Foto 3" />
-    <img src="images/foto4.jpg" alt="Foto 4" />
-  </div>
-</section>
-
-  <!-- SHËRBIMET -->
-  <section class="services">
-    <h2>Shërbimet tona</h2>
-    <div class="service-grid">
-      <div class="service-item">🏗️ Ndërtim objektesh</div>
-      <div class="service-item">🧱 Renovime</div>
-      <div class="service-item">🚪 Montim dritare/dyer</div>
-      <div class="service-item">🛒 Shitje materiale ndërtimi</div>
-      <div class="service-item">🪑 Mobilim i brendshëm</div>
-      <div class="service-item">📐 Konsulencë teknike</div>
+  <!-- ✅ SLIDER -->
+  <section class="slider">
+    <div class="slides">
+      <img src="images/slider1.jpg" alt="Slider 1">
+      <img src="images/slider2.jpg" alt="Slider 2">
+      <img src="images/slider3.jpg" alt="Slider 3">
+      <img src="images/slider4.jpg" alt="Slider 4">
     </div>
   </section>
 
-<!-- GALERI -->
-<section class="gallery">
-  <h2>Projektet tona</h2>
-  <div class="gallery-grid">
-    <img src="images/foto5.jpg" alt="Projekti 1"/>
-    <img src="images/foto6.jpg" alt="Projekti 2"/>
-    <img src="images/foto7.jpg" alt="Projekti 3"/>
-    <img src="images/foto8.jpg" alt="Projekti 4"/>
-    <img src="images/foto9.jpg" alt="Projekti 5"/>
-    <img src="images/foto10.jpg" alt="Projekti 6"/>
-  </div>
-</section>
-
-  <!-- KONTAKT -->
-  <section class="contact">
-    <h2>Kontakt</h2>
-    <p><strong>Email:</strong> arskab@hotmail.com</p>
-    <p><strong>Telefon:</strong> +383 44 403 818 / 049 625 911</p>
-    <p><strong>Adresa:</strong> Skenderaj, Kosovë</p>
-    <p><strong>Facebook:</strong> <a href="https://facebook.com/arajka" target="_blank">facebook.com/arajka</a></p>
+  <!-- ✅ SHËRBIME -->
+  <section id="services" class="services">
+    <h2>Shërbimet tona</h2>
+    <div class="service-grid">
+      <div class="service-box">🏗️ Ndërtim objektesh</div>
+      <div class="service-box">🧱 Renovime</div>
+      <div class="service-box">🚪 Dyer dhe dritare</div>
+      <div class="service-box">🛠️ Punime teknike</div>
+      <div class="service-box">🪑 Mobilim i brendshëm</div>
+      <div class="service-box">📐 Konsulencë</div>
+    </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ✅ GALERI -->
+  <section id="gallery" class="gallery">
+    <h2>Projektet tona</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Projekti 1">
+      <img src="images/gallery2.jpg" alt="Projekti 2">
+      <img src="images/gallery3.jpg" alt="Projekti 3">
+      <img src="images/gallery4.jpg" alt="Projekti 4">
+      <img src="images/gallery5.jpg" alt="Projekti 5">
+      <img src="images/gallery6.jpg" alt="Projekti 6">
+    </div>
+  </section>
+
+  <!-- ✅ KONTAKT -->
+  <section id="contact" class="contact">
+    <h2>Na Kontaktoni</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> arskab@hotmail.com</p>
+      <p><strong>Telefon:</strong> +383 44 403 818 / 049 625 911</p>
+      <p><strong>Adresa:</strong> Skenderaj, Kosovë</p>
+      <p><strong>Facebook:</strong> <a href="https://facebook.com/arajka">facebook.com/arajka</a></p>
+    </div>
+  </section>
+
+  <!-- ✅ FOOTER -->
   <footer>
-    &copy; <script>document.write(new Date().getFullYear())</script> BauNord AB – Të gjitha të drejtat e rezervuara
+    <div class="footer-container">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> BauNord AB – Të gjitha të drejtat e rezervuara</p>
+    </div>
   </footer>
 
-  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
